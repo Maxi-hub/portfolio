@@ -1,24 +1,33 @@
-
-
 * {
     margin: 0;
     padding: 0;
 }
 
+:root {
+    --linkOrangeColor: #ffa100;
+    --linkGreenColor: #107018;
+    /* --linkColor: #1f7f10; */
+}
+
 body {
-    font-family: 'Libre Baskerville', serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-family: 'Libre Baskerville', serif; */
     /* font-family: Adonis, AdonisW05, "Times New Roman"; */
+    background: url(img/fonwall.ru-nature-grass-light-plant-iokx.jpeg) no-repeat 50% 50% fixed;
+    background-size: cover;
+
 }
 
 a {
     text-decoration: none;
     cursor: pointer;
-    color: #585656;
+    /* color: #585656; */
+    color: white;
 }
 
 a:hover {
     text-decoration: overline;
-    color: #ffa100;
+    color: var(--linkGreenColor);
 }
 
 .wrapper {
@@ -29,8 +38,8 @@ a:hover {
 .top__header {
     display: flex;
     padding: 20px;
-    background: #dfdfdf;
-    box-shadow: 6px 25px 56px 6px rgb(0 0 0 / 16%);
+    /* background: #dfdfdf;
+    box-shadow: 6px 25px 56px 6px rgb(0 0 0 / 16%); */
     justify-content: right;
     flex-wrap: wrap;
     font-size: 15px;
@@ -38,7 +47,7 @@ a:hover {
 }
 
 .top__header_link {
-    color: #757373c8;
+    color: var(--linkOrangeColor);
 }
 
 .top__header_link:hover {
@@ -53,15 +62,17 @@ a:hover {
 }
 
 .heading__main_title {
-    font-size: 130px;
+    font-size: 110px;
     font-weight: 500;
-    color: #FFA100;
+    color: var(--linkGreenColor);
 }
 
 .heading__title {
-    color: #515151;
+    /* color: #515151; */
+    color: whitesmoke;
     font-size: 30px;
     font-family: "Playfair Display", serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -71,8 +82,10 @@ a:hover {
 .heading-about {
     font-size: 17px;
     font-style: italic;
-    font-family: "Playfair Display", serif;
+    /* font-family: "Playfair Display", serif; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 32px;
+    color: white;
 }
 
 .heading__main_link {
@@ -90,7 +103,7 @@ a:hover {
     bottom: 0;
     width: 200px;
     margin-left: -70px;
-    border-bottom: 2px solid #ffa100;
+    border-bottom: 2px solid var(--linkGreenColor);
 }
 
 .heading_link:hover {
@@ -99,7 +112,7 @@ a:hover {
 }
 
 .colored_link {
-    color: #ffa100;
+    color: var(--linkGreenColor);
 }
 
 .wrapper_main {
@@ -111,7 +124,7 @@ a:hover {
 }
 
 .main_topic {
-    min-height: 280px;
+    min-height: 180px;
     width: 1000px;
     padding: 10px;
     background: #FFF;
@@ -121,8 +134,15 @@ a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
+    border-radius: 20px;
 }
 
+
+.intro__text {
+    font-size: 22px;
+    text-align: center;
+    margin: 20px;
+}
 
 .img_link {
     padding: 10px;
@@ -146,7 +166,7 @@ a:hover {
 }
 
 .link_on_topic {
-    color: #ffa100;
+    color: var(--linkGreenColor);
     text-decoration: none;
 }
 
@@ -220,6 +240,10 @@ main {
     color: white;
 }
 
+.footer_link:hover {
+    color: var(--linkOrangeColor);
+}
+
 
 .feedback_link {
     display: flex;
@@ -254,13 +278,13 @@ main {
     gap: 5px;
 }
 
-h4 {
-    color: #da8a02;
+h3, h4 {
+    color: white;
 }
 
 label {
     padding: 10px 0;
-    color: #rgb(75, 74, 74)
+    color: white;
 }
 
 
@@ -268,11 +292,12 @@ input {
     padding: 10px;
     margin: 10px 0;
     width: 200px;
-    background-color: transparent;
+    /* background-color: transparent; */
+    background-color: whitesmoke;
     color: #1e1e1e;
     border: none;
     border-bottom: 2px solid #585656;
-    border-radius: 3%;
+    border-radius: 10px;
     outline: none;
     transition: border .5s;
 }
@@ -282,25 +307,27 @@ input, textarea:hover {
 }
 
 input:focus {
-    border-bottom: 2px solid #FFA100;
+    border-bottom: 2px solid var(--linkGreenColor);
 }
 
 textarea {
     /* resize: vertical; */
     display: flex;
     align-items: flex-end;
-    background-color: transparent;
+    /* background-color: transparent; */
+    background-color: whitesmoke;
     color: black;
     font-size: 14px;
     border: none;
     border-bottom: 2px solid #585656;
-    border-radius: 1%;
+    border-radius: 10px;
     outline: none;
     transition: border .5s;
+    padding: 10px;
 }
 
 textarea:focus {
-    border-bottom: 2px solid #FFA100;
+    border-bottom: 2px solid var(--linkGreenColor);
 }
 
 .send {
@@ -314,10 +341,12 @@ textarea:focus {
     outline: none;
     transition: border .5s;
     cursor: pointer;
+    background-color: whitesmoke;
 }
 
 .send:hover {
-    background-color: #FFA100;
+    background-color: var(--linkGreenColor);
+    color: white;
 }
 
 ::-webkit-input-placeholder {
@@ -407,11 +436,11 @@ ol li {
     border-radius: 20%;
     cursor: pointer;
     z-index: 1000;
-    transition: all .7s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
 .back-to-top:hover {
     background: #858585ab;
     text-decoration: none;
-    color: #FFA100;
+    color: var(--linkOrangeColor);
 }
