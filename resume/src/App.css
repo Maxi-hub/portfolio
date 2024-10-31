@@ -1,0 +1,260 @@
+@keyframes focus-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-800px);
+    transform: translateZ(-800px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  background: #000;
+  color: #fff;
+}
+
+.center {
+  padding-right: calc(50% - 570px);
+  padding-left: calc(50% - 570px);
+}
+
+.header {
+  font-size: larger;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.left-part {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* .left-part:hover {
+  color: rgba(147, 1, 238, 0.722);
+} */
+
+.right-part {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.burger-box {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px 20px 20px;
+  gap: 3px;
+  position: relative;
+  border-radius: 7px;
+}
+
+.burger-box__item {
+  width: 30px;
+  border: 2px solid #fff;
+  border-radius: 7px;
+  transition: all 0.5s;
+  position: absolute;
+  z-index: 0;
+}
+
+.title {
+  height: 85vh;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 42px;
+  font-weight: bold;
+  flex-direction: column;
+}
+
+.title__name {
+  font-size: 100px;
+  font-weight: bold;
+  animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.4s both;
+  text-align: center;
+}
+
+.history {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.experience, .skills, .education {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.experience-box {
+  position: relative;
+  width: 90%;
+  min-height: 90vh;
+  background-color: white;
+  color: #000;
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+.arrow {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  padding: 11px;
+  border-radius: 50%;
+  background-color: white;
+  top: -25px;
+  text-align: center;
+  align-content: center;
+  color: black;
+  z-index: 1;
+  font-size: 24px;
+}
+
+.arrow:hover {
+  color: white;
+  border: #000;
+  z-index: 1;
+  background-color: black;
+}
+
+.experience-block {
+  text-align: left;
+}
+
+.block1, .block2 {
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+
+.company {
+  font-weight: bold;
+}
+
+.education {
+  min-height: fit-content;
+}
+
+.experience-title, .education-title, .skills-title {
+  text-transform: uppercase;
+  font-size: 42px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.skills {
+  margin-bottom: inherit;
+  padding-bottom: 50px;
+  min-height: auto;
+}
+
+.skills-box {
+  width: 90%;
+  background-color: white;
+  color: #000;
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.skills-title {
+  margin-bottom: 0;
+}
+
+
+.skills-subtitle {
+  list-style: none;
+  font-size: 20px;
+  padding: 50px 20px;
+  border-bottom: 1px solid rgb(220, 220, 220);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+
+.skills-details[open] .skills-subtitle {
+  border-bottom: none;
+}
+
+.skills-subtitle::after {
+  content: '+';
+  font-size: 28px;
+  transition: transform 0.3s ease; 
+}
+
+.skills-details[open] .skills-subtitle::after {
+  transform: rotate(135deg); 
+}
+
+.skills-details[close] .skills-subtitle::after {
+  transform: rotate(0deg); 
+}
+
+.skills-subtitle:hover::after {
+  transform: rotate(180deg); 
+}
+
+.skills-list {
+  background-color: #000;
+  color: white;
+  margin: 0;
+  border-radius: 10px;
+  padding: 20px 10px 20px 30px;
+  line-height: 22px;
+}
+
+.education-box {
+  width: 90%;
+}
+
+.degree {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.contacts {
+  height: 100vh;
+  background-color: #000;
+  color: white;
+}
+
+.contacts-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.contacts-inputName, .contacts-inputEmail, .contacts-inputText {
+  border: none;
+}
+
+.contacts-inputName, .contacts-inputEmail, .contacts-inputText:hover {
+  border-bottom: 3px solid rgb(136, 0, 136);
+}
