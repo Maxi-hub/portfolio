@@ -22,13 +22,18 @@ a {
   color: white;
 }
 
-.project-link:hover  {
+.project-link:hover {
   color: rgb(145, 139, 139);
 }
 
-.wrapper {
-  background: #000;
-  color: #fff;
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.light {
+  background-color: white;
+  color: black;
 }
 
 .center {
@@ -68,7 +73,7 @@ a {
 
 .burger-box__item {
   width: 30px;
-  border: 2px solid #fff;
+  border: 2px solid white;
   border-radius: 7px;
   transition: all 0.5s;
   position: absolute;
@@ -105,8 +110,6 @@ a {
   position: relative;
   width: 90%;
   min-height: 90vh;
-  background-color: white;
-  color: #000;
   border-radius: 20px;
   text-align: center;
   padding: 20px;
@@ -129,7 +132,7 @@ a {
 
 .arrow:hover {
   color: white;
-  border: #000;
+  border: black;
   z-index: 1;
   background-color: black;
 }
@@ -176,8 +179,6 @@ a {
 
 .skills-box {
   width: 90%;
-  background-color: white;
-  color: #000;
   border-radius: 20px;
   text-align: center;
   padding: 20px;
@@ -209,24 +210,22 @@ a {
 .skills-subtitle::after {
   content: '+';
   font-size: 28px;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 .skills-details[open] .skills-subtitle::after {
-  transform: rotate(135deg); 
+  transform: rotate(135deg);
 }
 
 .skills-details[close] .skills-subtitle::after {
-  transform: rotate(0deg); 
+  transform: rotate(0deg);
 }
 
 .skills-subtitle:hover::after {
-  transform: rotate(180deg); 
+  transform: rotate(180deg);
 }
 
 .skills-list {
-  background-color: #000;
-  color: white;
   margin: 0;
   border-radius: 10px;
   padding: 20px 10px 20px 30px;
@@ -244,7 +243,7 @@ a {
 
 .contacts {
   min-height: 100vh;
-  background-color: #000;
+  background-color: black;
   color: white;
   padding-bottom: 10px;
 }
@@ -284,14 +283,14 @@ a {
   height: 30px;
   padding: 5px;
   border-radius: 5px;
-  outline:none;
+  outline: none;
   box-sizing: border-box;
-  border-bottom: 3px solid transparent; 
+  border-bottom: 3px solid transparent;
   transition: box-shadow 0.3s ease;
 }
 
-.contacts-inputName:hover, 
-.contacts-inputEmail:hover, 
+.contacts-inputName:hover,
+.contacts-inputEmail:hover,
 .contacts-inputText:hover {
   box-shadow: 0 3px 0 0 #9d00ff;
 }
@@ -301,6 +300,7 @@ a {
   height: 200px;
   box-sizing: border-box;
 }
+
 .contacts-item {
   display: flex;
   justify-content: left;
@@ -308,7 +308,7 @@ a {
 }
 
 .icon-mail, .icon-telegram, .icon-phone {
-  background-color: #fff;
+  background-color: white;
   margin-right: 20px;
 }
 
@@ -324,7 +324,7 @@ label {
 }
 
 .button-send, .button-back {
-  background-color: #000;
+  background-color: black;
   color: white;
   font-size: 18px;
   border: none;
@@ -333,9 +333,9 @@ label {
 }
 
 .button-send:hover, .button-back:hover {
-  background-color: white ;
-  color: #000;
+  background-color: white;
+  color: black;
   border-radius: 5px;
   padding: 5px;
   font-family: "Comfortaa", sans-serif;
-} 
+}

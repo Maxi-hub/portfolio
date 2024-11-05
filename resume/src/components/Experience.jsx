@@ -1,4 +1,7 @@
+import { useSelector } from "react-redux";
+
 export const Experience = () => {
+    const theme = useSelector(state => state.theme);
 
     const handleClick = (event) => {
         event.preventDefault();
@@ -8,7 +11,7 @@ export const Experience = () => {
 
     return (
         <div className='experience'>
-            <div id='experienceBox' className='experience-box'>
+            <div id='experienceBox' className={`experience-box ${theme === 'light' ? 'dark' : 'light'}`}>
                 <a href='#' className='arrow' onClick={handleClick}>&#9660;</a>
                 <h1 className="experience-title">опыт работы</h1>
                 <div className='experience-block'>

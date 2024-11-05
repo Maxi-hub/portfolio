@@ -1,11 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from '@mui/material';
+import { useSelector } from 'react-redux';
 
 export const Header = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
+  const theme = useSelector(state => state.theme);
+
+  const changeColorMenu = () => {
+    if (theme === 'light') {
+      const burgerMenu = document.querySelectorAll('.burger-box__item');
+      burgerMenu.forEach(menu => menu.style.border = '2px solid black');
+    }
+  }
+  useEffect(() => {
+    changeColorMenu();
+  }, [theme])
+
+
 
   const handleClickMenu = (e) => {
     setAnchorEl(e.currentTarget);

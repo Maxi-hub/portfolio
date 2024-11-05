@@ -1,3 +1,4 @@
+import { useSelector } from 'react-redux';
 import './App.css';
 import { Education } from './components/Education';
 import { Experience } from './components/Experience';
@@ -6,9 +7,12 @@ import { Projects } from './components/Projects';
 import { Skills } from './components/Skills';
 import { Title } from './components/Title';
 
+
 function App() {
+  const theme = useSelector(state => state.theme);
+
   return (
-    <div className='wrapper'>
+    <div className={`${theme}`}>
       <Header />
       <Title />
       <Experience />
