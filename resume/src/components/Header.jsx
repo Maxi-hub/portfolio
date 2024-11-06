@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from '@mui/material';
@@ -8,17 +8,14 @@ export const Header = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const theme = useSelector(state => state.theme);
+  const [color, setColor] = useState('white');
 
-  const changeColorMenu = () => {
-    if (theme === 'light') {
-      const burgerMenu = document.querySelectorAll('.burger-box__item');
-      burgerMenu.forEach(menu => menu.style.border = '2px solid black');
-    }
-  }
   useEffect(() => {
-    changeColorMenu();
-  }, [theme])
-
+    const burgerMenu = document.querySelectorAll('.burger-box__item');
+    const newColor = theme === 'dark' ? 'white' : 'black';
+    setColor(newColor); 
+    burgerMenu.forEach(menu => menu.style.border = `2px solid ${newColor}`); 
+  }, [theme]);
 
 
   const handleClickMenu = (e) => {
@@ -64,9 +61,9 @@ export const Header = () => {
         onClick={handleClickMenu}
       >
         <div className="burger-box">
-          <div className="burger-box__item item1"></div>
-          <div className="burger-box__item item2"></div>
-          <div className="burger-box__item item3"></div>
+          <div className={`burger-box__item item1 ${theme}`}></div>
+          <div className={`burger-box__item item2 ${theme}`}></div>
+          <div className={`burger-box__item item3 ${theme}`}></div>
         </div>
         <p>Меню</p>
       </div>

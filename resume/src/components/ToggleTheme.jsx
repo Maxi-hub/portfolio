@@ -10,7 +10,7 @@ const handleClick = () => {
 }
 
   return (
-    <button onClick={handleClick}>
+    <button className="changeThemeButton" onClick={handleClick}>
         Сменить тему
     </button>
   )
