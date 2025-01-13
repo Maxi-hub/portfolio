@@ -79,7 +79,7 @@ export const Header = () => {
           sx={{ color: 'black', fontFamily: 'Comfortaa, sans-serif' }}
           onClick={(e) => handleClick(e, '.experience-box')}
           onClose={handleCloseMenu}>
-          Опыт работы
+          Опыт
         </MenuItem>
         <MenuItem
           underline="none"
@@ -94,13 +94,6 @@ export const Header = () => {
           onClick={(e) => handleClick(e, '.skills')}
           onClose={handleCloseMenu}>
           Навыки
-        </MenuItem>
-        <MenuItem
-          underline="none"
-          sx={{ color: 'black', fontFamily: 'Comfortaa, sans-serif' }}
-          onClick={(e) => handleClick(e, '.projects')}
-          onClose={handleCloseMenu}>
-          Проекты
         </MenuItem>
         <MenuItem>
           <Link

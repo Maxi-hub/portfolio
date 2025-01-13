@@ -4,9 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Contacts } from './components/Contacts';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
+import { Contacts } from './components/contacts/Contacts';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

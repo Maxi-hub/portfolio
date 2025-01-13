@@ -19,7 +19,7 @@
 
 a {
   text-decoration: none;
-  color: white;
+  color: green;
 }
 
 .project-link:hover {
@@ -95,6 +95,13 @@ a {
   font-size: 100px;
   font-weight: bold;
   animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.4s both;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.title__position {
+  font-size: 30px;
+  margin: 0;
 }
 
 .changeThemeButton {
@@ -108,7 +115,7 @@ a {
   box-shadow: none;
 }
 
-.experience, .skills, .education, .projects {
+.experience, .skills, .education {
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -151,7 +158,7 @@ a {
   text-align: left;
 }
 
-.block1, .block2 {
+.experience-item {
   padding-bottom: 30px;
   border-bottom: 1px solid black;
 }
@@ -160,20 +167,24 @@ a {
   font-weight: bold;
 }
 
-.education, .projects {
+.myprojects-title {
+  margin-top: 35px;
+}
+
+.education {
   min-height: fit-content;
 }
 
-.education-block {
+.education-item {
   margin-bottom: 40px;
 }
 
-.education-block:first-of-type {
+.education-item:first-of-type {
   padding-bottom: 30px;
   border-bottom: 1px solid rgb(220, 220, 220);
 }
 
-.experience-title, .education-title, .skills-title, .projects-title, .contacts-title {
+.experience-title, .education-title, .skills-title, .contacts-title {
   text-transform: uppercase;
   font-size: 42px;
   font-weight: bold;
@@ -181,7 +192,19 @@ a {
   margin-bottom: 50px;
 }
 
-.skills, .projects {
+.practice-about {
+  margin-top: 40px;
+}
+
+.practice-item {
+  margin-bottom: 20px;
+}
+
+.practice-link {
+  margin: 7px 0 0 0;
+}
+
+.skills {
   margin-bottom: inherit;
   padding-bottom: 50px;
   min-height: auto;
@@ -242,7 +265,7 @@ a {
   line-height: 22px;
 }
 
-.education-box, .projects-box {
+.education-box {
   width: 90%;
 }
 
@@ -287,7 +310,7 @@ a {
   padding-top: 16px;
 }
 
-.contacts-inputName, .contacts-inputEmail, .contacts-inputText {
+.contacts-input {
   border: none;
   width: 300px;
   height: 30px;
@@ -299,16 +322,13 @@ a {
   transition: box-shadow 0.3s ease;
 }
 
-.contacts-inputName:hover,
-.contacts-inputEmail:hover,
-.contacts-inputText:hover {
+.contacts-input:hover {
   box-shadow: 0 3px 0 0 #9d00ff;
 }
 
-.contacts-inputText {
+textarea.contacts-input {
   width: 500px;
   height: 200px;
-  box-sizing: border-box;
 }
 
 .contacts-item {
@@ -317,7 +337,7 @@ a {
   align-items: center;
 }
 
-.icon-mail, .icon-telegram, .icon-phone {
+.contacts-icon {
   background-color: white;
   margin-right: 20px;
 }
