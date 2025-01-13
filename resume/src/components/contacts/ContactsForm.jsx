@@ -1,8 +1,14 @@
-import React from 'react'
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
+
 
 export const ContactsForm = () => {
+    const [state, handleSubmit] = useForm("xeoonzwz");
+    if (state.succeeded) {
+        return <p>Thanks for joining!</p>;
+    }
     return (
-        <form className="contacts-form">
+        <form onSubmit={handleSubmit} className="contacts-form">
             <div className="contacts-form-item">
                 <label htmlFor="name">Ваше имя</label>
                 <input
@@ -17,20 +23,33 @@ export const ContactsForm = () => {
                 <input
                     className="contacts-input"
                     type="email"
+                    name="email"
                     id="email"
                     placeholder="email@example.ru"
                     required />
+                <ValidationError
+                    prefix="Email"
+                    field="email"
+                    errors={state.errors}
+                />
             </div>
             <div className="contacts-form-item">
                 <label htmlFor="text">Введите ваш текст</label>
                 <textarea
                     className="contacts-input"
+                    id="message"
+                    name="message"
                     type="text"
-                    placeholder="Введите ваш текст. Форма отправки текста будет настроена при размещении на сервере"
+                    placeholder="Не стесняйтесь! Напишите мне, если у вас есть пожелания или предложения."
                     required>
                 </textarea>
+                <ValidationError
+                    prefix="Message"
+                    field="message"
+                    errors={state.errors}
+                />
             </div>
-            <button type="submit" className="button-send">Отправить</button>
+            <button type="submit" className="button-send" disabled={state.submitting}>Отправить</button>
         </form>
     )
 }
