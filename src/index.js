@@ -14,7 +14,7 @@ root.render(
     <Provider store={store}>
       <BrowserRouter basename="/resume">
         <Routes>
-          <Route path='/resume' element={<App />} />
+          <Route path='/' element={<App />} />
           <Route path='/contacts' element={<Contacts />} />
         </Routes>
       </BrowserRouter>
