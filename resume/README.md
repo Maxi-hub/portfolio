@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# "Резюме онлайн" / "Resume online"
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Описание проекта
+Этот проект — это онлайн-резюме, которое я создала с целью продемонстрировать свои навыки работы с **React** и показать работодателям свои возможности. Приложение состоит из двух страниц:  
+1. Главная страница, на которой представлены разделы "Опыт", "Образование", "Навыки" и "Обо мне".  
+2. Страница "Контакты" с формой обратной связи, которая отправляет данные через сервис **Formspree**.  
 
-## Available Scripts
+Проект включает функционал смены темы (с темной на светлую и обратно), реализованный с помощью **React Redux**. Для оформления навигации между страницами и выпадающего меню используются компоненты библиотеки **Material UI**.
 
-In the project directory, you can run:
+## Project Description
+This project is an online resume that I created in order to demonstrate my skills working with **React** and show employers my capabilities. The application consists of two pages:
+1. The main page, which contains the sections "Experience", "Education", "Skills" and "About me".  
+2. The "Contacts" page with a feedback form that sends data through the **Formspree** service.  
 
-### `npm start`
+The project includes the functionality of changing the theme (from dark to light and back), implemented using **React Redux**. The components of the **Material UI** library are used to design the navigation between pages and the drop-down menu.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Ключевые особенности
+- **Дизайн**: Минималистичный интерфейс.  
+- **Смена темы**: Кнопка для изменения цветовой схемы приложения (темная/светлая тема).  
+- **Навигация**: Выпадающее меню и ссылки для быстрого перемещения к нужному разделу, реализованные через Material UI.  
+- **Контактная форма**: Простая форма для отправки сообщений на страницу Formspree.  
 
-### `npm test`
+## Key Features
+- **Design**: Minimalistic interface, focused on desktop devices.  
+- **Theme Change**: A button to change the color scheme of the application (dark/light theme).  
+- **Navigation**: Drop-down menu and links for quick navigation to the desired section, implemented via the Material UI.  
+- **Contact Form**: A simple form for sending messages to the Formspree page.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Используемые технологии
+- **React**: Основной фреймворк для разработки приложения.
+- **React Router**: Для маршрутизации между страницами.
+- **React Redux**: Для управления состоянием приложения (система тем).  
+- **Material UI**: Для создания навигационного меню и стилизованных ссылок.  
+- **Formspree**: Для обработки и отправки данных из контактной формы.  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies used
+- **React**: The main framework for application development.
+- **React Router**: For routing between pages.
+- **React Redux**: For managing the application state (theme system).  
+- **Material UI**: For creating navigation menus and stylized links.  
+- **Formspree**: For processing and sending data from the contact form.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Запуск проекта локально
+Чтобы запустить проект на вашем компьютере, выполните следующие шаги:
 
-### `npm run eject`
+1. **Клонируйте репозиторий**:
+   ```bash
+   git clone https://github.com/Maxi-hub/my-projects.git
+   cd my-projects/resume/
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Установите зависимости**: 
+Убедитесь, что у вас установлен Node.js и менеджер пакетов npm или yarn. Выполните команду:
+    ```bash
+    npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Запустите проект**: 
+После установки всех зависимостей выполните:
+    ```bash
+    npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Приложение откроется в браузере по адресу: http://localhost:3000.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Launching the project locally
+To run the project on your computer, follow these steps:
 
-## Learn More
+1. **Clone the repository**:
+``bash
+   git clone https://github.com/Maxi-hub/my-projects.git
+   cd my-projects/resume/
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Install dependencies**:
+Make sure you have Node installed.js and the npm or yarn package manager. Run the command:
+``bash
+npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **Launch the project**: 
+After installing all the dependencies, run:
+    ```bash
+    npm start
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The application opens in the browser at: http://localhost:3000 .

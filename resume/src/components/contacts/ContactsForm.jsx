@@ -7,6 +7,7 @@ export const ContactsForm = () => {
     if (state.succeeded) {
         return <p>Thanks for joining!</p>;
     }
+
     return (
         <form onSubmit={handleSubmit} className="contacts-form">
             <div className="contacts-form-item">

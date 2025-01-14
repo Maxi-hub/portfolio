@@ -47,7 +47,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 30px;
+  padding: 30px;
 }
 
 .left-part {
@@ -89,6 +89,8 @@ a {
   font-size: 42px;
   font-weight: bold;
   flex-direction: column;
+  text-align: center;
+  padding: 0 30px;
 }
 
 .title__name {
@@ -201,7 +203,7 @@ a {
 }
 
 .practice-link {
-  margin: 7px 0 0 0;
+  word-wrap: break-word;
 }
 
 .skills {
@@ -368,4 +370,97 @@ label {
   border-radius: 5px;
   padding: 5px;
   font-family: "Comfortaa", sans-serif;
+}
+
+
+@media (max-width: 768px) {
+  a {
+    font-size: 16px;
+  }
+
+  ol {
+    padding: 0;
+  }
+
+  ul {
+    padding: 0 17px;
+  }
+
+  .dark, .light {
+    padding: 0 5px;
+  }
+
+  .header {
+    padding: 0;
+  }
+
+  .burger-box {
+    padding: 15px 30px 21px 15px;
+  }
+
+  .burger-box__item {
+    border: 1px solid white;
+    width: 13px;
+  }
+
+  .arrow {
+    position: inherit;
+    top: -10px;
+  }
+
+  .title__name {
+    font-size: 50px;
+  }
+
+  .title__position {
+    font-size: 20px;
+  }
+
+  .experience, .education {
+    margin-bottom: 20px;
+  }
+
+  .skills {
+    padding-bottom: 20px;
+  }
+
+  .experience-title, .skills-title, .contacts-title {
+    font-size: 30px;
+    margin-bottom: 0px;
+  }
+
+  .education-title {
+    font-size: 30px;
+  }
+
+  .skills-box {
+    padding: 10px 5px;
+  }
+
+  .skills-subtitle {
+    padding: 30px 10px;
+  }
+
+  .skills-list {
+    padding: 20px 10px 20px 30px;
+  }
+
+  .contacts {
+    padding-bottom: 30px;
+  }
+
+  .contacts-box {
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    gap: 30px;
+  }
+
+  .contacts-input {
+    width: 270px;
+  }
+
+  textarea.contacts-input {
+    width: 300px;
+  }
 }

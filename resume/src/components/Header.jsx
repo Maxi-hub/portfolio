@@ -9,24 +9,38 @@ export const Header = () => {
   const open = Boolean(anchorEl);
   const theme = useSelector(state => state.theme);
   const [color, setColor] = useState('white');
+  const burgerMenu = document.querySelectorAll('.burger-box__item');
 
   useEffect(() => {
-    const burgerMenu = document.querySelectorAll('.burger-box__item');
     const newColor = theme === 'dark' ? 'white' : 'black';
-    setColor(newColor); 
-    burgerMenu.forEach(menu => menu.style.border = `2px solid ${newColor}`); 
+    setColor(newColor);
+    burgerMenu.forEach(menu => {
+      if (window.innerWidth <= 768) {
+        menu.style.border = `1px solid ${newColor}`
+      } else {
+        menu.style.border = `2px solid ${newColor}`
+      }
+    })
   }, [theme]);
 
 
   const handleClickMenu = (e) => {
     setAnchorEl(e.currentTarget);
     const item1 = document.querySelector('.item1');
-    item1.style.transform = 'translate(7px, -13px) rotate(52deg)';
-    item1.style.transformOrigin = 'left top';
-
     const item3 = document.querySelector('.item3');
-    item3.style.transform = 'translate(-5px, -14px) rotate(-52deg)';
-    item3.style.transformOrigin = 'right bottom';
+
+    if (window.innerWidth <= 768) {
+      item1.style.transform = 'translate(6px, -10px) rotate(55deg)';    
+      item1.style.transformOrigin = 'left top';
+      item3.style.transform = 'translate(-5px, -11px) rotate(-55deg)';
+      item3.style.transformOrigin = 'right bottom';
+    } else {
+      item1.style.transform = 'translate(7px, -13px) rotate(52deg)';
+      item1.style.transformOrigin = 'left top';
+      item3.style.transform = 'translate(-5px, -14px) rotate(-52deg)';
+      item3.style.transformOrigin = 'right bottom';
+    }
+
   };
 
   const handleCloseMenu = () => {
