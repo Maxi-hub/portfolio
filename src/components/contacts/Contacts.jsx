@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom"
-import { ContactsItem } from "./ContactsItem";
 import { ContactsForm } from "./ContactsForm";
+import { ContactsItem } from "./ContactsItem";
 
 
 export const Contacts = () => {
@@ -17,23 +17,23 @@ export const Contacts = () => {
             <div className="contacts-box">
                 <div className="contacts-info">
                     <ContactsItem
-                        iconSrc="../../img/mail.png"
+                        iconSrc="./img/mail.png"
                         altText="Иконка электронной почты"
                         content="em.lebedeva@mail.ru"
                     />
                     <ContactsItem
-                        iconSrc="../img/telegram.png"
+                        iconSrc="./img/telegram.png"
                         altText="Иконка телеграм"
                         link="https://t.me/+79851539474"
                         content="https://t.me/+79851539474"
                     />
                     <ContactsItem
-                        iconSrc="../img/phone.png"
+                        iconSrc="./img/phone.png"
                         altText="Иконка телефонной трубки"
                         content="+7985-153-9474"
                     />
                     <ContactsItem
-                        iconSrc="../img/github.png"
+                        iconSrc="./img/github.png"
                         altText="Иконка github"
                         link="https://github.com/Maxi-hub"
                         content="https://github.com/Maxi-hub"

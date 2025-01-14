@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @-webkit-keyframes focus-in-expand-fwd {
   0% {
     letter-spacing: -0.5em;
@@ -67,11 +74,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 30px;
 }
 
@@ -86,8 +93,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
 }
 
@@ -97,8 +104,8 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 20px 50px 20px 20px;
   gap: 3px;
   position: relative;
@@ -123,17 +130,17 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 42px;
   font-weight: bold;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
   padding: 0 30px;
 }
@@ -142,7 +149,7 @@ a {
   font-size: 100px;
   font-weight: bold;
   -webkit-animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.4s both;
-          animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.4s both;
+  animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.4s both;
   text-align: center;
   margin-bottom: 0;
 }
@@ -155,25 +162,26 @@ a {
 .changeThemeButton {
   padding: 7px;
   border-radius: 10px;
+  color: black;
   background-color: white;
   border-color: black;
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
   font-family: "Comfortaa", sans-serif;
   cursor: pointer;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
-.experience, .skills, .education {
+.experience, .skills, .education, .about {
   width: 100%;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-bottom: 70px;
 }
 
@@ -197,7 +205,7 @@ a {
   top: -25px;
   text-align: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   z-index: 1;
   font-size: 24px;
 }
@@ -241,7 +249,7 @@ a {
   border-bottom: 1px solid rgb(220, 220, 220);
 }
 
-.experience-title, .education-title, .skills-title, .contacts-title {
+.experience-title, .education-title, .skills-title, .contacts-title, .about-title {
   text-transform: uppercase;
   font-size: 42px;
   font-weight: bold;
@@ -291,12 +299,12 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   position: relative;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .skills-details[open] .skills-subtitle {
@@ -315,20 +323,20 @@ a {
 
 .skills-details[open] .skills-subtitle::after {
   -webkit-transform: rotate(135deg);
-      -ms-transform: rotate(135deg);
-          transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 
 .skills-details[close] .skills-subtitle::after {
   -webkit-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-          transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .skills-subtitle:hover::after {
   -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .skills-list {
@@ -369,8 +377,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   font-size: 20px;
 }
 
@@ -384,14 +392,14 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 30px;
   padding-top: 16px;
 }
@@ -404,7 +412,7 @@ a {
   border-radius: 5px;
   outline: none;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-bottom: 3px solid transparent;
   -webkit-transition: -webkit-box-shadow 0.3s ease;
   transition: -webkit-box-shadow 0.3s ease;
@@ -415,7 +423,7 @@ a {
 
 .contacts-input:hover {
   -webkit-box-shadow: 0 3px 0 0 #9d00ff;
-          box-shadow: 0 3px 0 0 #9d00ff;
+  box-shadow: 0 3px 0 0 #9d00ff;
 }
 
 textarea.contacts-input {
@@ -428,11 +436,11 @@ textarea.contacts-input {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .contacts-icon {
@@ -446,14 +454,14 @@ textarea.contacts-input {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 label {
@@ -477,6 +485,39 @@ label {
   font-family: "Comfortaa", sans-serif;
 }
 
+.about {
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+}
+
+.about-box {
+  padding: 0 60px;
+  text-indent: 25px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 2px solid white;
+  padding-top: 60px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .title__name {
+    font-size: 70px;
+    -webkit-animation: none;
+            animation: none;
+  }
+}
 
 @media (max-width: 768px) {
   a {
@@ -515,6 +556,8 @@ label {
 
   .title__name {
     font-size: 50px;
+    -webkit-animation: none;
+            animation: none;
   }
 
   .title__position {
@@ -525,11 +568,15 @@ label {
     margin-bottom: 20px;
   }
 
+  .experience-box {
+    width: 97%;
+  }
+
   .skills {
     padding-bottom: 20px;
   }
 
-  .experience-title, .skills-title, .contacts-title {
+  .experience-title, .skills-title, .contacts-title, .about-title {
     font-size: 30px;
     margin-bottom: 0px;
   }
@@ -540,10 +587,12 @@ label {
 
   .skills-box {
     padding: 10px 5px;
+    width: 97%;
   }
 
   .skills-subtitle {
     padding: 30px 10px;
+    list-style-type: none;
   }
 
   .skills-list {
@@ -557,11 +606,11 @@ label {
   .contacts-box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     font-size: 16px;
     gap: 30px;
   }
@@ -572,5 +621,28 @@ label {
 
   textarea.contacts-input {
     width: 300px;
+  }
+
+  .about {
+    margin-bottom: 40px;
+  }
+
+  .about-box {
+    padding: 0 10px;
+  }
+
+  .footer {
+    height: 250px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+    padding: 0 20px;
+    font-size: 14px;
+  }
+
+  .footer a {
+    font-size: 14px;
   }
 }

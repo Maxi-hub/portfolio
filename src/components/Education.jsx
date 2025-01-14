@@ -3,7 +3,7 @@ export const Education = () => {
     const education = [
         {
             position: "Frontend-разработчик",
-            level: "курсы",
+            level: "",
             institutionName: "GeekBrains",
             graduationYear: 2024
         },
@@ -21,7 +21,7 @@ export const Education = () => {
                 <h1 className="education-title">образование</h1>
                 {education.map((item, index) => (
                     <div key={index} className="education-item">
-                    <p><span className="degree">{item.position}</span>, {item.level}</p>
+                    <p><span className="degree">{item.position}</span> {item.level}</p>
                     <p>{item.institutionName}, {item.graduationYear}</p>
                 </div>
                 ))}

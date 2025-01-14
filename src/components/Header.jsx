@@ -40,7 +40,6 @@ export const Header = () => {
       item3.style.transform = 'translate(-5px, -14px) rotate(-52deg)';
       item3.style.transformOrigin = 'right bottom';
     }
-
   };
 
   const handleCloseMenu = () => {
@@ -109,9 +108,16 @@ export const Header = () => {
           onClose={handleCloseMenu}>
           Навыки
         </MenuItem>
+        <MenuItem
+          underline="none"
+          sx={{ color: 'black', fontFamily: 'Comfortaa, sans-serif' }}
+          onClick={(e) => handleClick(e, '.about')}
+          onClose={handleCloseMenu}>
+          О себе
+        </MenuItem>
         <MenuItem>
           <Link
-            href="/contacts"
+            href="/resume/contacts"
             underline="none"
             sx={{ color: 'black', fontFamily: 'Comfortaa, sans-serif' }}>
             Контакты
