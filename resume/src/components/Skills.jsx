@@ -19,7 +19,7 @@ export const Skills = () => {
             <div id='skillsBox' className={`skills-box ${theme === 'light' ? 'dark' : 'light'}`}>
                 <h1 className="skills-title">навыки</h1>
                 {skills.map((skill, index) => (
-                    <details className="skills-details">
+                    <details key={index} className="skills-details">
                         <summary className="skills-subtitle">{skill.name}</summary>
                         <ul className={`skills-list ${theme}`}>
                             {skill.list.map((item, i) => (

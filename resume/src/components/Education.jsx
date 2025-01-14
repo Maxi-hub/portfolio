@@ -19,8 +19,8 @@ export const Education = () => {
         <div className="education">
             <div className="education-box">
                 <h1 className="education-title">образование</h1>
-                {education.map(item => (
-                    <div className="education-item">
+                {education.map((item, index) => (
+                    <div key={index} className="education-item">
                     <p><span className="degree">{item.position}</span>, {item.level}</p>
                     <p>{item.institutionName}, {item.graduationYear}</p>
                 </div>
