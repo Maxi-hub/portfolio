@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import { Link } from '@mui/material';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -30,7 +30,7 @@ export const Header = () => {
     const item3 = document.querySelector('.item3');
 
     if (window.innerWidth <= 768) {
-      item1.style.transform = 'translate(6px, -10px) rotate(55deg)';    
+      item1.style.transform = 'translate(6px, -10px) rotate(55deg)';
       item1.style.transformOrigin = 'left top';
       item3.style.transform = 'translate(-5px, -11px) rotate(-55deg)';
       item3.style.transformOrigin = 'right bottom';
@@ -117,9 +117,10 @@ export const Header = () => {
         </MenuItem>
         <MenuItem>
           <Link
-            href="/resume/contacts"
+            to="/contacts"
             underline="none"
-            sx={{ color: 'black', fontFamily: 'Comfortaa, sans-serif' }}>
+            style={{ color: 'black', fontFamily: 'Comfortaa, sans-serif' }}
+          >
             Контакты
           </Link>
         </MenuItem>
