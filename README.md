@@ -1,14 +1,14 @@
 # "Резюме онлайн" / "Resume online"
 
 ## Описание проекта
-Этот проект — это онлайн-резюме, которое я создала с целью продемонстрировать свои навыки работы с **React** и показать работодателям свои возможности. Приложение состоит из двух страниц:  
+Этот проект — это онлайн-резюме, которое я создала с целью продемонстрировать свои навыки работы с **React** и показать свои возможности. Приложение состоит из двух страниц:  
 1. Главная страница, на которой представлены разделы "Опыт", "Образование", "Навыки" и "Обо мне".  
 2. Страница "Контакты" с формой обратной связи, которая отправляет данные через сервис **Formspree**.  
 
 Проект включает функционал смены темы (с темной на светлую и обратно), реализованный с помощью **React Redux**. Для оформления навигации между страницами и выпадающего меню используются компоненты библиотеки **Material UI**.
 
 ## Project Description
-This project is an online resume that I created in order to demonstrate my skills working with **React** and show employers my capabilities. The application consists of two pages:
+This project is an online resume that I created in order to demonstrate my skills working with **React** and show my capabilities. The application consists of two pages:
 1. The main page, which contains the sections "Experience", "Education", "Skills" and "About me".  
 2. The "Contacts" page with a feedback form that sends data through the **Formspree** service.  
 
@@ -48,8 +48,8 @@ The project includes the functionality of changing the theme (from dark to light
 
 1. **Клонируйте репозиторий**:
    ```bash
-   git clone https://github.com/Maxi-hub/my-projects.git
-   cd my-projects/resume/
+   git clone https://github.com/Maxi-hub/resume.git
+   cd resume
 
 2. **Установите зависимости**: 
 Убедитесь, что у вас установлен Node.js и менеджер пакетов npm или yarn. Выполните команду:
@@ -67,14 +67,14 @@ The project includes the functionality of changing the theme (from dark to light
 To run the project on your computer, follow these steps:
 
 1. **Clone the repository**:
-``bash
-   git clone https://github.com/Maxi-hub/my-projects.git
-   cd my-projects/resume/
+    ```bash
+   git clone https://github.com/Maxi-hub/resume.git
+   cd resume
 
 2. **Install dependencies**:
 Make sure you have Node installed.js and the npm or yarn package manager. Run the command:
-``bash
-npm install
+    ```bash
+    npm install
 
 3. **Launch the project**: 
 After installing all the dependencies, run:

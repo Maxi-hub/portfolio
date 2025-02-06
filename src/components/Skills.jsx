@@ -6,7 +6,7 @@ export const Skills = () => {
     const skills = [
         {
             name: "Hard skills",
-            list: ["HTML, CSS, SCSS", "Адаптивная верстка", "Java Script", "React", "Git/GitHub", "Node.js", "английский язык - базовый уровень"],
+            list: ["HTML, CSS, SCSS", "Адаптивная верстка", "Java Script", "React", "Redux", "Material UI", "Git/GitHub", "Node.js", "Английский язык - Intermediadate"],
         },
         {
             name: "Soft skills",

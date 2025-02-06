@@ -11,8 +11,8 @@ export const ContactsInfo = () => {
         {
             iconSrc: "./img/telegram.png",
             altText: "Иконка телеграм",
-            link: "https://t.me/+79851539474",
-            content: "https://t.me/+79851539474"
+            link: "https://t.me/em_leb",
+            content: "https://t.me/em_leb",
         },
         {
             iconSrc: "./img/phone.png",
@@ -20,7 +20,7 @@ export const ContactsInfo = () => {
             content: "+7985-153-9474"
         },
         {
-            iconSrc: "/../img/github.png",
+            iconSrc: "./img/github.png",
             altText: "Иконка github",
             link: "https://github.com/Maxi-hub",
             content: "https://github.com/Maxi-hub"

@@ -13,8 +13,8 @@ export const Footer = () => {
                 <ContactsItem
                     iconSrc="/resume/img/telegram.png"
                     altText="Иконка телеграм"
-                    link="https://t.me/+79851539474"
-                    content="https://t.me/+79851539474"
+                    link="https://t.me/em_leb"
+                    content="https://t.me/em_leb"
                 />
             </div>
             <div>
