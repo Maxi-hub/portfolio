@@ -197,7 +197,7 @@ a {
 
 @media (max-width: 768px) {
   a {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   ol {
@@ -226,7 +226,7 @@ a {
   }
 
   .title {
-    height: 52vh;
+    height: 62vh;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;

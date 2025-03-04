@@ -10,7 +10,7 @@ export const Projects = () => {
             title: 'Сайт поиска рецептов и планирования меню на неделю',
             src: '/portfolio/img/rfamp.png',
             alt: 'Главная страница сайта recipe finder and meal planner',
-            gitHubLink: 'https://github.com/Maxi-hub/portfolio',
+            gitHubLink: 'https://github.com/Maxi-hub/recipe_finder_and_meal_planner',
             siteLink: 'https://maxi-hub.github.io/recipe_finder_and_meal_planner/',
             stack: 'React, React Router, Redux Toolkit, React Modal, Redux Persist',
         },
