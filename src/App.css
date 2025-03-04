@@ -106,11 +106,6 @@ a {
   z-index: 0;
 }
 
-.contact-link {
-  color: black;
-  font-family: 'Comfortaa, sans-serif';
-}
-
 .title {
   height: 80vh;
   text-transform: uppercase;
@@ -163,22 +158,18 @@ a {
 
 .about {
   width: 100%;
-  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-bottom: 70px;
+  padding-bottom: 70px;
 }
 
-.company {
-  font-weight: bold;
-}
-
-.myprojects-title {
-  margin-top: 35px;
+.about-box {
+  padding: 0 60px;
+  text-indent: 25px;
 }
 
 .about-title {
@@ -189,32 +180,12 @@ a {
   margin-bottom: 50px;
 }
 
-.practice-about {
-  margin-top: 40px;
+.footer {
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0;
+  font-size: 12px;
 }
-
-.practice-item {
-  margin-bottom: 20px;
-}
-
-.practice-link {
-  word-wrap: break-word;
-}
-
-.about {
-  min-height: -webkit-min-content;
-  min-height: -moz-min-content;
-  min-height: min-content;
-  margin-bottom: inherit;
-  padding-bottom: 70px;
-}
-
-.about-box {
-  padding: 0 60px;
-  text-indent: 25px;
-}
-
-
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .title__name {
@@ -222,20 +193,11 @@ a {
     -webkit-animation: none;
     animation: none;
   }
-
-  .contacts {
-    padding: 10px 30px;
-  }
-
-  textarea.contacts-input {
-    width: 400px;
-  }
-
 }
 
 @media (max-width: 768px) {
   a {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   ol {
@@ -251,7 +213,7 @@ a {
   }
 
   .header {
-    padding: 0;
+    padding: 10px;
   }
 
   .burger-box {
@@ -263,6 +225,13 @@ a {
     width: 13px;
   }
 
+  .title {
+    height: 52vh;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
   .arrow {
     position: inherit;
     top: -10px;
@@ -271,88 +240,22 @@ a {
   .title__name {
     font-size: 50px;
     -webkit-animation: none;
-    animation: none;
+            animation: none;
+    margin-top: 100px;
+    margin-bottom: 30px;
   }
 
   .title__position {
     font-size: 20px;
+    margin: 0 0 77px;
   }
 
-  .projects {
-    margin-bottom: 20px;
-  }
-
-  .projects-box {
-    width: 97%;
-  }
-
-  .skills {
-    padding-bottom: 20px;
-  }
-
-  .projects-title, .skills-title, .contacts-title, .about-title {
+  .about-title {
     font-size: 30px;
     margin-bottom: 0px;
   }
 
-  .skills-box {
-    padding: 10px 5px;
-    width: 97%;
-  }
-
-  .skills-subtitle {
-    padding: 30px 10px;
-    list-style-type: none;
-  }
-
-  .skills-list {
-    padding: 20px 10px 20px 30px;
-  }
-
-  .contacts {
-    padding-bottom: 30px;
-  }
-
-  .contacts-box {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    font-size: 16px;
-    gap: 30px;
-  }
-
-  .contacts-input {
-    width: 270px;
-  }
-
-  textarea.contacts-input {
-    width: 300px;
-  }
-
-  .about {
-    margin-bottom: 40px;
-  }
-
   .about-box {
     padding: 0 10px;
-  }
-
-  .footer {
-    height: 250px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    gap: 0;
-    padding: 0 20px;
-    font-size: 14px;
-  }
-
-  .footer a {
-    font-size: 14px;
   }
 }

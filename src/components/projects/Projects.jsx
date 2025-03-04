@@ -42,7 +42,7 @@ export const Projects = () => {
         <div className={s.projects}>
             <div id='projectsBox' className={`${s.box} ${theme === 'light' ? 'dark' : 'light'}`}>
                 <a href='#' className={s.arrow} onClick={handleClick}>&#9660;</a>
-                <h2>сделано собственными стараниями с применением современных технологий</h2>
+                <h2 className={s.title}>Создаю не просто сайты — воплощаю идеи в реальность!</h2>
                 <ProjectBlock projects={projects} />
             </div>
         </div>

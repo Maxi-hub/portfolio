@@ -10,7 +10,7 @@ export const ProjectBlock = ({ projects }) => {
             {
                 projects.map((project, index) => (
                     <div key={index} className={`${theme} ${s.block}`}>
-                        <h3 className={s.title}>{project.title}</h3>
+                        <h3 className={s.blockTitle}>{project.title}</h3>
                         <img className={s.image} src={project.src} alt={project.alt} />
                         <div className={s.links}>
                             <Link to={project.gitHubLink} target='_blank' className={s.gitHubBlock}>

@@ -1,18 +1,20 @@
 # "Портфолио" / "Portfolio"
 
 ## Описание проекта
-Этот проект — это онлайн-резюме, которое я создала с целью продемонстрировать свои навыки работы с **React** и показать свои возможности. Приложение состоит из двух страниц:  
-1. Главная страница, на которой представлены разделы "Опыт", "Образование", "Навыки" и "Обо мне".  
+Это портфолио моих лучших работ, которое я создала с целью продемонстрировать свои навыки и возможности. Само портфолио также выполнено на **React**.
+Сайт состоит из двух страниц:  
+1. Главная страница, на которой представлены мои проекты, стек моих знаний и используемых технологий и немного информации обо мне.  
 2. Страница "Контакты" с формой обратной связи, которая отправляет данные через сервис **Formspree**.  
 
-Проект включает функционал смены темы (с темной на светлую и обратно), реализованный с помощью **React Redux**. Для оформления навигации между страницами и выпадающего меню используются компоненты библиотеки **Material UI**.
+Проект включает функционал смены темы (с темной на светлую и обратно), который я реализовала с помощью **React Redux**. Для оформления навигации между страницами и выпадающего меню используются компоненты библиотеки **Material UI**.
 
 ## Project Description
-This project is an online resume that I created in order to demonstrate my skills working with **React** and show my capabilities. The application consists of two pages:
-1. The main page, which contains the sections "Experience", "Education", "Skills" and "About me".  
+This is a portfolio of my best works, which I created in order to demonstrate my skills and capabilities. The portfolio itself is also made on **React**.
+The site consists of two pages:
+1. The main page, which presents my projects, the stack of my knowledge and technologies used, and some information about me.  
 2. The "Contacts" page with a feedback form that sends data through the **Formspree** service.  
 
-The project includes the functionality of changing the theme (from dark to light and back), implemented using **React Redux**. The components of the **Material UI** library are used to design the navigation between pages and the drop-down menu.
+The project includes the functionality of changing the theme (from dark to light and back), which I implemented using **React Redux**. The components of the **Material UI** library are used to design the navigation between pages and the drop-down menu.
 
 
 ## Ключевые особенности
@@ -43,6 +45,9 @@ The project includes the functionality of changing the theme (from dark to light
 - **Formspree**: For processing and sending data from the contact form.
 
 
+## Запуск проекта 
+Перейдите по ссылке на [Портфолио](maxi-hub.github.io/portfolio/) или запустите проект локально.
+
 ## Запуск проекта локально
 Чтобы запустить проект на вашем компьютере, выполните следующие шаги:
 
@@ -62,6 +67,10 @@ The project includes the functionality of changing the theme (from dark to light
     npm start
 
 Приложение откроется в браузере по адресу: http://localhost:3000.
+
+
+## Project launch 
+Follow the link to [Portfolio](maxi-hub.github.io/portfolio /) or run the project locally.
 
 ## Launching the project locally
 To run the project on your computer, follow these steps:
