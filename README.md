@@ -46,7 +46,7 @@ The project includes the functionality of changing the theme (from dark to light
 
 
 ## Запуск проекта 
-Перейдите по ссылке на [Портфолио](maxi-hub.github.io/portfolio/) или запустите проект локально.
+Перейдите по ссылке на [Портфолио](https://maxi-hub.github.io/portfolio/) или запустите проект локально.
 
 ## Запуск проекта локально
 Чтобы запустить проект на вашем компьютере, выполните следующие шаги:
