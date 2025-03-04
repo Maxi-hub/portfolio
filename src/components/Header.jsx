@@ -3,6 +3,9 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import s from './skills/skills.module.css';
+import p from './projects/projects.module.css';
+
 
 export const Header = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -55,7 +58,7 @@ export const Header = () => {
 
   const handleClick = (e, selector) => {
     e.preventDefault();
-    const targetBox = document.querySelector(selector);
+    const targetBox = document.querySelector(`.${selector}`);
     if (targetBox) {
       targetBox.scrollIntoView({ behavior: "smooth" });
     }
@@ -63,8 +66,8 @@ export const Header = () => {
   };
 
   return (
-    <header className="header center">
-      <p href='#' className="left-part">резюме</p>
+    <header className="header">
+      <p className="left-part">портфолио</p>
 
       <div
         className="right-part"
@@ -81,7 +84,7 @@ export const Header = () => {
         <p>Меню</p>
       </div>
       <Menu
-        id="baic-menu"
+        id="basic-menu"
         anchorEl={anchorEl}
         open={open}
         onClose={handleCloseMenu}
@@ -90,30 +93,23 @@ export const Header = () => {
         <MenuItem
           underline="none"
           sx={{ color: 'black', fontFamily: 'Comfortaa, sans-serif' }}
-          onClick={(e) => handleClick(e, '.experience-box')}
+          onClick={(e) => handleClick(e, `${p.projects}`)}
           onClose={handleCloseMenu}>
-          Опыт
+          Проекты
         </MenuItem>
         <MenuItem
           underline="none"
           sx={{ color: 'black', fontFamily: 'Comfortaa, sans-serif' }}
-          onClick={(e) => handleClick(e, '.education')}
-          onClose={handleCloseMenu}>
-          Образование
-        </MenuItem>
-        <MenuItem
-          underline="none"
-          sx={{ color: 'black', fontFamily: 'Comfortaa, sans-serif' }}
-          onClick={(e) => handleClick(e, '.skills')}
-          onClose={handleCloseMenu}>
-          Навыки
-        </MenuItem>
-        <MenuItem
-          underline="none"
-          sx={{ color: 'black', fontFamily: 'Comfortaa, sans-serif' }}
-          onClick={(e) => handleClick(e, '.about')}
+          onClick={(e) => handleClick(e, 'about')}
           onClose={handleCloseMenu}>
           О себе
+        </MenuItem>
+        <MenuItem
+          underline="none"
+          sx={{ color: 'black', fontFamily: 'Comfortaa, sans-serif' }}
+          onClick={(e) => handleClick(e, `${s.block}`)}
+          onClose={handleCloseMenu}>
+          Стек технологий
         </MenuItem>
         <MenuItem>
           <Link

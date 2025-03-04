@@ -1,5 +1,6 @@
 import React from 'react'
 import { ContactsItem } from './ContactsItem'
+import s from './contacts.module.css'
 
 export const ContactsInfo = () => {
     const contactItems = [
@@ -28,7 +29,7 @@ export const ContactsInfo = () => {
     ]
 
     return (
-        <div className="contacts-info">
+        <div className={s.info}>
             {
                 contactItems.map((item, index) => (
                     <ContactsItem

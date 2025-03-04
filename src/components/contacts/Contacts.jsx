@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import { ContactsForm } from "./ContactsForm";
 import { ContactsInfo } from "./ContactsInfo";
+import s from './contacts.module.css'
 
 
 export const Contacts = () => {
@@ -11,10 +12,10 @@ export const Contacts = () => {
     }
 
     return (
-        <div className="contacts center">
-            <button className="button-back" onClick={handleBack}>&lt; Вернуться</button>
-            <h1 className="contacts-title">Мои контакты</h1>
-            <div className="contacts-box">
+        <div className={`${s.contacts} ${s.center}`}>
+            <button className={s.buttonBack} onClick={handleBack}>&lt; Вернуться</button>
+            <h1 className={s.title}>Мои контакты</h1>
+            <div className={s.box}>
                 <ContactsInfo />
                 <ContactsForm />
             </div>

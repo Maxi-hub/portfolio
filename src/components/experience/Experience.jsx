@@ -105,7 +105,7 @@ export const Experience = () => {
         <div className='experience'>
             <div id='experienceBox' className={`experience-box ${theme === 'light' ? 'dark' : 'light'}`}>
                 <a href='#' className='arrow' onClick={handleClick}>&#9660;</a>
-                <h1 className="experience-title">опыт</h1>
+                <p className="experience-title">сделано собственными стараниями с применением современных технологий</p>
                 <div className='experience-block'>
                     <ExperienceItem
                         company='Проектная деятельность'

@@ -1,6 +1,5 @@
-import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
-
+import s from './contacts.module.css'
 
 export const ContactsForm = () => {
     const [state, handleSubmit] = useForm("xeoonzwz");
@@ -9,20 +8,20 @@ export const ContactsForm = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit} className="contacts-form">
-            <div className="contacts-form-item">
+        <form onSubmit={handleSubmit} className={s.form}>
+            <div className={s.formItem}>
                 <label htmlFor="name">Ваше имя</label>
                 <input
-                    className="contacts-input"
+                    className={s.input}
                     type="text"
                     id="name"
                     placeholder="Ваше имя"
                     required />
             </div>
-            <div className="contacts-form-item">
+            <div className={s.formItem}>
                 <label htmlFor="e-mail">Ваш email</label>
                 <input
-                    className="contacts-input"
+                    className={s.input}
                     type="email"
                     name="email"
                     id="email"
@@ -34,10 +33,10 @@ export const ContactsForm = () => {
                     errors={state.errors}
                 />
             </div>
-            <div className="contacts-form-item">
+            <div className={s.formItem}>
                 <label htmlFor="text">Введите ваш текст</label>
                 <textarea
-                    className="contacts-input"
+                    className={s.input}
                     id="message"
                     name="message"
                     type="text"
@@ -50,7 +49,7 @@ export const ContactsForm = () => {
                     errors={state.errors}
                 />
             </div>
-            <button type="submit" className="button-send" disabled={state.submitting}>Отправить</button>
+            <button type="submit" className={s.buttonSend} disabled={state.submitting}>Отправить</button>
         </form>
     )
 }
