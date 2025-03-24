@@ -13,7 +13,7 @@ export const ProjectBlock = ({ projects }) => {
                         <h3 className={s.blockTitle}>{project.title}</h3>
                         <img className={s.image} src={project.src} alt={project.alt} />
                         <div className={s.links}>
-                            <Link to={project.gitHubLink} target='_blank' className={s.gitHubBlock}>
+                            <Link to={project.gitHubLink} target='_blank' className={project.gitHubLink ? s.gitHubBlock : s.gitHubBlockHide}>
                                 <div className={s.linkBox}>
                                     <img className={s.linkImg} src="/portfolio/img/github.png" alt="Иконка github" />
                                     GitHub

@@ -37,9 +37,10 @@
     align-items: center;
 }
 
-details > summary::marker {
-    display: none;
+details > summary::-webkit-details-marker {
+    display: none; 
     content: '';
+    list-style-type: none;
 }
 
 .details[open] .subtitle {

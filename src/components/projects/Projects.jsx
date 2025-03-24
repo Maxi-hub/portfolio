@@ -18,7 +18,6 @@ export const Projects = () => {
             title: 'Сайт о какао и шоколаде',
             src: '/portfolio/img/cocoa.png',
             alt: 'Главная страница сайта о какао и шоколаде',
-            gitHubLink: 'https://github.com/Maxi-hub/Cocoa',
             siteLink: 'https://cocoauniverse.info',
             stack: 'HTML, CSS, JavaScript, принципы UI/UX',
         },

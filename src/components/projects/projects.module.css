@@ -101,6 +101,10 @@
     cursor: pointer;
 }
 
+.gitHubBlockHide {
+    display: none;
+}
+
 .internetBlock {
     background-color: white;
     width: 25%;
