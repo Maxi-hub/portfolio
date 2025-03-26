@@ -8,7 +8,7 @@ export const Projects = () => {
     const projects = [
         {
             title: 'Сайт поиска рецептов и планирования меню на неделю',
-            src: '/portfolio/img/rfamp.png',
+            src: '/portfolio/img/rfamp.jpg',
             alt: 'Главная страница сайта recipe finder and meal planner',
             gitHubLink: 'https://github.com/Maxi-hub/recipe_finder_and_meal_planner',
             siteLink: 'https://maxi-hub.github.io/recipe_finder_and_meal_planner/',
@@ -16,14 +16,14 @@ export const Projects = () => {
         },
         {
             title: 'Сайт о какао и шоколаде',
-            src: '/portfolio/img/cocoa.png',
+            src: '/portfolio/img/cocoa.jpg',
             alt: 'Главная страница сайта о какао и шоколаде',
             siteLink: 'https://cocoauniverse.info',
-            stack: 'HTML, CSS, JavaScript, принципы UI/UX',
+            stack: 'HTML, CSS, JavaScript, React, принципы UI/UX',
         },
         {
             title: 'Интернет-магазин одежды и аксессуаров',
-            src: '/portfolio/img/brand.png',
+            src: '/portfolio/img/brand.jpg',
             alt: 'Главная страница сайта о какао и шоколаде',
             gitHubLink: 'https://github.com/Maxi-hub/React/tree/main/brand',
             stack: 'Figma, HTML, CSS, JavaScript, React',
